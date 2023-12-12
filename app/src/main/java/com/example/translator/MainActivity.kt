@@ -8,6 +8,7 @@ import android.view.Menu
 import android.view.translation.Translator
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.PopupMenu
 import android.widget.TextView
 import android.widget.Toast
@@ -26,6 +27,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnSrc: MaterialButton
     private lateinit var btnTgt: MaterialButton
     private lateinit var btnTranslate: MaterialButton
+    private lateinit var btnBack: ImageButton
 
     companion object{
         private const val TAG = "MAIN_TAG"
@@ -49,6 +51,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        btnBack = findViewById(R.id.btnBack)
         edtSrcLang = findViewById(R.id.edtSrcLang)
         txtDstLang = findViewById(R.id.txtDstLang)
         btnSrc = findViewById(R.id.btnSrc)
@@ -61,6 +64,10 @@ class MainActivity : AppCompatActivity() {
 
 
         loadAvailableLanguages()
+
+        btnBack.setOnClickListener{
+            //put functionality for back button here
+        }
 
         btnSrc.setOnClickListener{
             sourceLanguageChoose()

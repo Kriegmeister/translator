@@ -31,10 +31,10 @@
         android:id="@+id/txtTo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/inter_regular"
-        android:text="Translation"
+        android:text="T r a n s l a t i o n"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
 
@@ -69,10 +69,10 @@
         android:id="@+id/txtFrom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/inter_regular"
-        android:text="Enter Text"
+        android:text="E n t e r  T e x t"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTranslator" />
 
@@ -92,7 +92,13 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:gravity="start|top"
-            android:inputType="textMultiLine" />
+            android:inputType="textMultiLine"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:paddingBottom="150dp"/>
+
     </ScrollView>
 
     <com.google.android.material.button.MaterialButton
