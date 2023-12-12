@@ -19,7 +19,7 @@
 
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/txtDstLang"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -87,7 +87,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtFrom">
 
         <EditText
-            android:id="@+id/editTextTextMultiLine"
+            android:id="@+id/edtSrcLang"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
